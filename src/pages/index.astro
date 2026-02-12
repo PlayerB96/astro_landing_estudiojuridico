@@ -5,6 +5,7 @@ import Servicios from "../components/Servicios.jsx";
 import Equipo from "../components/Equipo.jsx";
 import Contacto from "../components/Contacto.jsx";
 import Footer from "../components/Footer.jsx";
+import SeccionesIntercaladas from "../components/SeccionesIntercaladas.jsx";
 import ThemeToggle from "../components/ThemeToggle.jsx";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -16,33 +17,33 @@ import Layout from "../layouts/Layout.astro";
     <meta name="description" content={landing.descripcion} />
     <link rel="icon" href="/favicon.ico" />
   </head>
-  <div class="min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+  <div class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
     <nav
-      class="bg-white dark:bg-gray-900 shadow py-4 sticky top-0 z-10 flex justify-center items-center"
+      class="bg-slate-50/90 dark:bg-slate-950/90 backdrop-blur border-b border-slate-200 dark:border-slate-800 py-3 sm:py-4 sticky top-0 z-10 flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 px-4"
     >
-      <ul class="flex justify-center gap-8">
+      <ul class="flex flex-wrap justify-center gap-4 sm:gap-8">
         <li>
           <a
             href="#inicio"
-            class="text-blue-900 dark:text-blue-200 font-bold hover:text-blue-600 dark:hover:text-blue-400 transition"
+            class="text-base sm:text-base text-slate-800 dark:text-slate-100 font-semibold hover:text-amber-600 dark:hover:text-amber-400 transition"
             >Inicio</a>
         </li>
         <li>
           <a
             href="#servicios"
-            class="text-blue-900 dark:text-blue-200 font-bold hover:text-blue-600 dark:hover:text-blue-400 transition"
+            class="text-base sm:text-base text-slate-800 dark:text-slate-100 font-semibold hover:text-amber-600 dark:hover:text-amber-400 transition"
             >Servicios</a>
         </li>
         <li>
           <a
             href="#equipo"
-            class="text-blue-900 dark:text-blue-200 font-bold hover:text-blue-600 dark:hover:text-blue-400 transition"
+            class="text-base sm:text-base text-slate-800 dark:text-slate-100 font-semibold hover:text-amber-600 dark:hover:text-amber-400 transition"
             >Equipo</a>
         </li>
         <li>
           <a
             href="#contacto"
-            class="text-blue-900 dark:text-blue-200 font-bold hover:text-blue-600 dark:hover:text-blue-400 transition"
+            class="text-base sm:text-base text-slate-800 dark:text-slate-100 font-semibold hover:text-amber-600 dark:hover:text-amber-400 transition"
             >Contacto</a>
         </li>
       </ul>
@@ -51,7 +52,32 @@ import Layout from "../layouts/Layout.astro";
     <div id="inicio">
       <Hero />
     </div>
+    <section
+      class="relative bg-fixed bg-center bg-cover"
+      style="background-image: url('https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1600&q=80');"
+    >
+      <div class="absolute inset-0 bg-slate-900/70"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
+        <p class="text-amber-400 text-xs uppercase tracking-[0.25em]">Confianza</p>
+        <h3 class="text-2xl sm:text-2xl md:text-3xl font-semibold text-white mt-3">
+          Acompañamiento legal con excelencia profesional
+        </h3>
+      </div>
+    </section>
+    <SeccionesIntercaladas />
     <Servicios />
+    <section
+      class="relative bg-fixed bg-center bg-cover"
+      style="background-image: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80');"
+    >
+      <div class="absolute inset-0 bg-slate-900/70"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
+        <p class="text-amber-400 text-xs uppercase tracking-[0.25em]">Estrategia</p>
+        <h3 class="text-2xl sm:text-2xl md:text-3xl font-semibold text-white mt-3">
+          Soluciones legales serias para decisiones seguras
+        </h3>
+      </div>
+    </section>
     <Equipo />
     <Contacto />
     <Footer />

@@ -20,7 +20,7 @@ export default function ThemeToggle() {
 
   return (
     <button
-      className="ml-4 px-3 py-1 rounded bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-300 dark:border-gray-700 transition flex items-center gap-2"
+      className="ml-4 px-3 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-200 dark:border-slate-700 transition flex items-center gap-2 hover:bg-amber-100 dark:hover:bg-slate-700"
       onClick={() => setDark((d) => !d)}
       aria-label="Toggle dark mode"
       type="button"

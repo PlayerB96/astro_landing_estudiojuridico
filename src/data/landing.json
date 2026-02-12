@@ -2,9 +2,16 @@
   "titulo": "Estudio Jurídico",
   "descripcion": "Tu solución legal, rápida y profesional",
   "servicios": [
-    { "nombre": "Consultas legales", "detalle": "Resolvemos tus dudas jurídicas." },
-    { "nombre": "Asesoría en contratos", "detalle": "Revisión y redacción profesional." },
-    { "nombre": "Representación judicial", "detalle": "Defensa y acompañamiento en procesos legales." }
+    { "nombre": "Resolución de Contrato", "detalle": "Estrategia legal para resolver contratos en Lima." },
+    { "nombre": "Incumplimiento de Contrato", "detalle": "Defensa y reclamación de tus derechos contractuales." },
+    { "nombre": "Otorgamiento de Escritura", "detalle": "Gestión legal para formalizar tu propiedad." },
+    { "nombre": "Rectificación de Áreas y Linderos", "detalle": "Corrección de medidas y colindancias con respaldo técnico." },
+    { "nombre": "Obligación de Dar Suma de Dinero", "detalle": "Cobro judicial y extrajudicial de deudas." },
+    { "nombre": "Pensión de Alimentos", "detalle": "Representación y acuerdos justos para tu familia." },
+    { "nombre": "Régimen de Visitas", "detalle": "Acuerdos y procesos para proteger el vínculo familiar." },
+    { "nombre": "Tenencia", "detalle": "Asesoría para definir la custodia con enfoque legal." },
+    { "nombre": "Petición de Herencia", "detalle": "Trámite y defensa de tus derechos sucesorios." },
+    { "nombre": "División y Partición", "detalle": "Soluciones legales para bienes comunes y herencias." }
   ],
   "contacto": {
     "titulo": "Contacto",
