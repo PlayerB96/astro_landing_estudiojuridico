@@ -1,17 +1,59 @@
 ---
-
+import landing from "../data/landing.json" assert { type: "json" };
+import Hero from "../components/Hero.jsx";
+import Servicios from "../components/Servicios.jsx";
+import Equipo from "../components/Equipo.jsx";
+import Contacto from "../components/Contacto.jsx";
+import Footer from "../components/Footer.jsx";
+import ThemeToggle from "../components/ThemeToggle.jsx";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{landing.titulo} - {landing.descripcion}</title>
+    <meta name="description" content={landing.descripcion} />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <div class="min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+    <nav
+      class="bg-white dark:bg-gray-900 shadow py-4 sticky top-0 z-10 flex justify-center items-center"
+    >
+      <ul class="flex justify-center gap-8">
+        <li>
+          <a
+            href="#inicio"
+            class="text-blue-900 dark:text-blue-200 font-bold hover:text-blue-600 dark:hover:text-blue-400 transition"
+            >Inicio</a>
+        </li>
+        <li>
+          <a
+            href="#servicios"
+            class="text-blue-900 dark:text-blue-200 font-bold hover:text-blue-600 dark:hover:text-blue-400 transition"
+            >Servicios</a>
+        </li>
+        <li>
+          <a
+            href="#equipo"
+            class="text-blue-900 dark:text-blue-200 font-bold hover:text-blue-600 dark:hover:text-blue-400 transition"
+            >Equipo</a>
+        </li>
+        <li>
+          <a
+            href="#contacto"
+            class="text-blue-900 dark:text-blue-200 font-bold hover:text-blue-600 dark:hover:text-blue-400 transition"
+            >Contacto</a>
+        </li>
+      </ul>
+      <ThemeToggle client:load />
+    </nav>
+    <div id="inicio">
+      <Hero />
+    </div>
+    <Servicios />
+    <Equipo />
+    <Contacto />
+    <Footer />
+  </div>
+</Layout>

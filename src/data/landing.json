@@ -1,0 +1,16 @@
+{
+  "titulo": "Estudio Jurídico",
+  "descripcion": "Tu solución legal, rápida y profesional",
+  "servicios": [
+    { "nombre": "Consultas legales", "detalle": "Resolvemos tus dudas jurídicas." },
+    { "nombre": "Asesoría en contratos", "detalle": "Revisión y redacción profesional." },
+    { "nombre": "Representación judicial", "detalle": "Defensa y acompañamiento en procesos legales." }
+  ],
+  "contacto": {
+    "titulo": "Contacto",
+    "placeholderNombre": "Tu nombre",
+    "placeholderEmail": "Tu email",
+    "placeholderMensaje": "¿En qué podemos ayudarte?",
+    "boton": "Enviar"
+  }
+}
