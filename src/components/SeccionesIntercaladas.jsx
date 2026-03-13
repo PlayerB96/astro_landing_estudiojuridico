@@ -11,7 +11,7 @@ const items = [
   {
     title: "Atención personalizada",
     text: "Tratamos cada situación con confidencialidad y cercanía. Nuestro equipo responde con rapidez y claridad para que tomes decisiones informadas.",
-    image: "/assets/estudio_img2.jpeg",
+    image: "/assets/estudio_img3.jpeg",
     alt: "Documentos jurídicos",
   },
   {
