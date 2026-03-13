@@ -17,6 +17,7 @@
     "titulo": "Contacto",
     "placeholderNombre": "Tu nombre",
     "placeholderEmail": "Tu email",
+    "placeholderTelefono": "Tu telefono",
     "placeholderMensaje": "¿En qué podemos ayudarte?",
     "boton": "Enviar"
   }

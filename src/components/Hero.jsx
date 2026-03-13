@@ -10,9 +10,9 @@ export default function Hero() {
       <div className="absolute inset-0 bg-slate-900/70" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 text-center">
         <span className="inline-block text-xs sm:text-sm tracking-[0.2em] uppercase text-slate-200/90">Estudio jurídico</span>
-        <h1 className="text-4xl sm:text-4xl md:text-5xl font-bold mt-3 mb-4">Defensa legal sólida y estratégica</h1>
+        <h1 className="text-4xl sm:text-4xl md:text-5xl font-bold mt-3 mb-4">Estudio juridico Rafael & Abogados Asociados</h1>
         <p className="text-lg sm:text-lg md:text-xl text-slate-200 mb-8">
-          Soluciones confiables, atención cercana y resultados orientados a tu tranquilidad.
+          Ofrecemos soluciones a través de un servicio integral, brindando soluciones legales a problemas específicos y evaluando el caso para la solucion por la via judicial, concialicion o el arbitraje. Contamos con un equipo de profesionales para cada materia.
         </p>
         <a
           href="#contacto"
