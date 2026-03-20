@@ -3,6 +3,7 @@ import landing from "../data/landing.json" assert { type: "json" };
 import Hero from "../components/Hero.jsx";
 import Servicios from "../components/Servicios.jsx";
 import Equipo from "../components/Equipo.jsx";
+import Videos from "../components/Videos.jsx";
 import Contacto from "../components/Contacto.jsx";
 import Footer from "../components/Footer.jsx";
 import SeccionesIntercaladas from "../components/SeccionesIntercaladas.jsx";
@@ -43,6 +44,12 @@ import Layout from "../layouts/Layout.astro";
         </li>
         <li>
           <a
+            href="#videos"
+            class="text-base sm:text-base text-slate-800 dark:text-slate-100 font-semibold hover:text-amber-600 dark:hover:text-amber-400 transition"
+            >Videos</a>
+        </li>
+        <li>
+          <a
             href="#contacto"
             class="text-base sm:text-base text-slate-800 dark:text-slate-100 font-semibold hover:text-amber-600 dark:hover:text-amber-400 transition"
             >Contacto</a>
@@ -80,6 +87,7 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </section>
     <Equipo />
+    <Videos />
     <Contacto client:load />
     <Footer />
   </div>
